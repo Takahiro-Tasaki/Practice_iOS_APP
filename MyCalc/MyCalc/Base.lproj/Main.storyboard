@@ -269,10 +269,10 @@
             </objects>
             <point key="canvasLocation" x="484" y="148"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="mAb-aI-EJA">
             <objects>
-                <viewController id="COy-Gh-eYi" sceneMemberID="viewController">
+                <viewController id="COy-Gh-eYi" customClass="ResultViewController" customModule="MyCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7tQ-IN-GPN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,6 +299,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="resultField" destination="4h6-UO-rEh" id="7qk-SC-0Hv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QJJ-q0-Ukz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
