@@ -26,6 +26,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let viewController = segue.destination as! PercentViewController
+        if let price = Int(priceField.text!) {
+            viewController.price = price
+        }
+    }
+
     @IBAction func tap1Button(_ sender: Any) {
         let value = priceField.text! + "1"
         if let price = Int(value) {
