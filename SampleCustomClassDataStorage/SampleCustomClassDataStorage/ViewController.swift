@@ -13,6 +13,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        // 画面表示時にデータを格納
+        let userDefaults = UserDefaults.standard
+        let data = MyData()
+        data.valueString = "test"
+        userDefaults.set(data, forKey: "data")
+        userDefaults.synchronize()
     }
 
     override func didReceiveMemoryWarning() {
